@@ -17,7 +17,7 @@ public class Game {
             }
             System.out.println();
         }
-
+// hellooo
         Scanner sc = new Scanner(System.in);
         while(true) {
             String userControl = sc.next();
