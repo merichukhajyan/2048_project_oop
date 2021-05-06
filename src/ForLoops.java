@@ -22,7 +22,7 @@ public class ForLoops extends JPanel
 
     public void paintComponent(Graphics g) // method for drawing
     {
-        g.setColor(new Color(255, 229, 204));
+        g.setColor(new Color(250, 218, 221));
         g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
         int w = (this.getWidth() - 3 * tileSize - (col - 1) * interTileSize) / col;

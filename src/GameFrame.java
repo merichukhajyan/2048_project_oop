@@ -10,11 +10,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class GameFrame extends JFrame implements ActionListener{
-    private ForLoops forLoops;
-    private JLabel scoreDisplay;
-    private JLabel highestScore;
-    private JButton newGame;
+public class GameFrame extends JFrame implements ActionListener {
+    private final ForLoops forLoops;
+    private final JLabel scoreDisplay;
+    private final JLabel highestScore;
+    private final JButton newGame;
     Game game = new Game();
 
     public GameFrame() {
@@ -46,8 +46,7 @@ public class GameFrame extends JFrame implements ActionListener{
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
-                    }
-                    else if(game.gameLost()) {
+                    } else if (game.gameLost()) {
                         new LoseScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -61,8 +60,7 @@ public class GameFrame extends JFrame implements ActionListener{
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
-                    }
-                    else if(game.gameLost()) {
+                    } else if (game.gameLost()) {
                         new LoseScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -77,8 +75,7 @@ public class GameFrame extends JFrame implements ActionListener{
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
-                    }
-                    else if(game.gameLost()) {
+                    } else if (game.gameLost()) {
                         new LoseScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -93,24 +90,20 @@ public class GameFrame extends JFrame implements ActionListener{
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
-                    }
-                    else if(game.gameLost()) {
+                    } else if (game.gameLost()) {
                         new LoseScreen();
                         game.newGame();
                         forLoops.repaint();
                     }
 
-                }
-                else if (key == KeyEvent.VK_N)
-                {
+                } else if (key == KeyEvent.VK_N) {
                     game.newGame();
                     forLoops.repaint();
                 }
             }
 
             @Override
-            public void keyReleased(KeyEvent e)
-            {
+            public void keyReleased(KeyEvent e) {
 
             }
         });
@@ -158,12 +151,12 @@ public class GameFrame extends JFrame implements ActionListener{
         setLocationRelativeTo(null); // Opens the window in the middle of the screen
         ImageIcon titleImage = new ImageIcon("Images/logo.png");
         setIconImage(titleImage.getImage());
-        getContentPane().setBackground(new Color(255, 229, 204));
+        getContentPane().setBackground(new Color(250, 218, 221));
         setVisible(true);
     }
+
     @Override
-    public void actionPerformed(ActionEvent e)
-    {
+    public void actionPerformed(ActionEvent e) {
         game.newGame();
         forLoops.repaint();
 
