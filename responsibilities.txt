@@ -1,0 +1,19 @@
+Responsibility list
+Tile - Yura created the class and used switch statements, later I changed switch to if else
+
+Board - peer programming
+
+Game - mainly Yura’s work, regularly checked and debugged by Meri
+
+ForLoops - mainly Meri’s work checked and debugged by Yura
+
+Start Screen - Meri and Yura
+
+Lose Screen - Meri and Yura
+
+Win Screen - Meri and Yura
+
+Game Frame - 50/50(We regularly changed and developed the code, so it hard to say who’s work it 
+mainly is)
+
+Game GUI Demo - Meri changed the main and added some functionality in order to change the icon of the game for MAC OS.
