@@ -2,7 +2,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -26,7 +25,7 @@ public class LoseScreen extends JFrame implements ActionListener{
         button.setOpaque(true);
 
         setSize(600, 600);
-        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setForeground(Color.WHITE);
         setFont(new Font("Times New Roman", Font.BOLD, 25));
         setResizable(false);

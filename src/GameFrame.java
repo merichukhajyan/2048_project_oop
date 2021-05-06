@@ -1,4 +1,3 @@
-import java.io.File;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -44,7 +43,6 @@ public class GameFrame extends JFrame implements ActionListener{
                     highestScore.setText("Highest Score: " + Game.highestScore);
                     forLoops.repaint();
                     if (game.gameWon()) {
-                        // dispose();
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -60,7 +58,6 @@ public class GameFrame extends JFrame implements ActionListener{
                     highestScore.setText("Highest Score: " + Game.highestScore);
                     forLoops.repaint();
                     if (game.gameWon()) {
-                        //     dispose();
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -77,7 +74,6 @@ public class GameFrame extends JFrame implements ActionListener{
                     highestScore.setText("Highest Score: " + Game.highestScore);
                     forLoops.repaint();
                     if (game.gameWon()) {
-                        //     dispose();
                         new WinScreen();
                         game.newGame();
                         forLoops.repaint();
@@ -136,7 +132,7 @@ public class GameFrame extends JFrame implements ActionListener{
         scoreDisplay.setIcon(scoreImage);
         scoreDisplay.setVerticalAlignment(JLabel.CENTER);// scoreDisplay position within its borders
         scoreDisplay.setHorizontalAlignment(JLabel.CENTER);
-        scoreDisplay.setBounds(780, 30, 250, 40);
+        scoreDisplay.setBounds(700, 30, 330, 40);
 
 
         highestScore.setBackground(new Color(156, 138, 114)); // The color of Score's background

@@ -43,8 +43,8 @@ public class ForLoops extends JPanel
 
                 if (arr[i][j].getValue() != 0)
                 {
-                    String s =  (arr[i][j].getValue() + " ").toString();
-                    g.drawString( s,(tileSize + (j) * (w + interTileSize) + w / 2)- s.length()*12, (tileSize + (i) * (h + interTileSize) + h / 2)-s.length()*(int)0.5);
+                    String s =  (arr[i][j].getValue() + " ");
+                    g.drawString( s,(tileSize + (j) * (w + interTileSize) + w / 2)- s.length()*12, (tileSize + (i) * (h + interTileSize) + h / 2));
                 }
             }
         }

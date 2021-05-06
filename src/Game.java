@@ -229,7 +229,7 @@ public class Game implements Cloneable
     public boolean gameWon() {
         for(int i = 0; i < 4; i++) {
             for(int j = 0; j < 4; j++) {
-                if(this.gameBoard.getBoard()[i][j].getValue() == 8) {
+                if(this.gameBoard.getBoard()[i][j].getValue() == 2048) {
                     return true;
                 }
             }
